@@ -4,6 +4,8 @@
       <square style="width: 500px;height: 500px"></square>
       <div style="text-align: center">渐变背景色</div>
       <linear style="width: 500px;height: 500px"></linear>
+      <div style="text-align: center">透明文字</div>
+      <transparent-text></transparent-text>
   </div>
 </template>
 
@@ -11,8 +13,9 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import Square from "@/components/Square.vue";
 import Linear from "@/components/linear.vue";
+import TransparentText from "@/components/text/TransparentText.vue";
 @Component({
-    components: {Linear, Square}
+    components: {TransparentText, Linear, Square}
 })
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
