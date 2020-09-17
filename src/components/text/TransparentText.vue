@@ -10,7 +10,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class HelloWorld extends Vue {
+export default class TransparentText extends Vue {
   @Prop() private msg!: string;
 }
 </script>
@@ -30,7 +30,7 @@ export default class HelloWorld extends Vue {
         text-transform: uppercase;
         margin: auto;
         color: white;
-        background: url("../../assets/bg.jpg") 50% 50%;
+        background: url("../../assets/logo.png") 50% 50%;
         background-size: cover;
         -webkit-text-fill-color: transparent;
         background-clip: content-box;
